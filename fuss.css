@@ -1,0 +1,258 @@
+/* Fobs css v1.0 - C. Davis 2014/15 */
+
+/* Extension classes listed here (for use in <div>, <p> elements etc.) */
+
+/*
+ .page             adds a page frame
+ .kbd              looks like a keyboard key (white on black)
+ .kbd combo        keyboard combo layout (e.g. CTRL+K )
+ .panel			   Bright blue background panel with white text	
+*/
+
+
+/* Default styles for standard HTML elements */
+
+/* Navbar */
+/* Uses unordered list to display horizontally */
+
+body{
+      background-color: #fefefe;
+}
+
+a{
+	color:				#777777;
+	text-decoration:	none;
+}
+a:hover{
+	color:				#ffffff;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+    display: block;
+    width: 120px;
+    font-weight: bold;
+    color: #000000;
+    background-color: #ededfb;
+    text-align: center;
+    padding: 4px;
+    text-decoration: none;
+    text-transform: uppercase;	
+	border-top-left-radius:	 5px;
+	border-top-right-radius: 5px;
+}
+
+li:a{
+    color: #000000;
+    text-decoration: none;
+}
+li:hover{
+    background-color: #5d5d6b;
+    color: #ffffff;
+    text-decoration: none;	
+}
+
+hr{
+  margin-top:		0px;
+  margin-bottom:	0px;
+}
+
+h1,h2,h3,h4,h5,h6{
+  padding-top:    0px;
+  padding-bottom: 0px;
+  padding-left:   1%;
+  padding-right:  1%;
+  margin-top:		0px;
+  margin-bottom:	0px;
+}
+
+table{
+      width:			96%;
+	  margin-left:		2%;
+      border-spacing: 	1px;
+      border-width: 	1px;
+      border-style: 	dotted;
+	  text-align: left;
+}
+
+th{
+  padding-left: 5px;
+  padding-right: 5px;
+  color: white;
+  background-color: #313131;
+}
+
+td{
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+tr:nth-child(2n){
+             background-color:  #cfdfff;  !important;
+}
+
+/* Paragraphs */
+
+p{
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+/* Divs */
+
+div{
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+
+/* FUSS extension classes */
+
+/* Button colour is the background colour listed here. Should also be edited in the .page class further below so div matches ul */
+/* also set in the button class below if page buttons are to use the same colour as the navbar background */
+	
+.center{
+  text-align:     center !important;
+}
+
+.page{
+  text-align:     center;
+  border-radius:  5px;
+  padding-top:    1%;
+  padding-bottom: 1%;
+  padding-left:   1%;
+  padding-right:  1%;
+  background-color:	#ededfb;
+  border:         1px solid;
+}
+
+/* set the background panel colour below - also add it to the button class if they are to use the same shade */
+
+.panel{
+  text-align:     center;
+  border-radius:  5px;
+  padding-top:    1%;
+  padding-bottom: 1%;
+  padding-left:   1%;
+  padding-right:  1%;
+  color:			#fefefe;
+  background-color:	#5776cb;
+  border:         1px solid;
+}
+
+.kbd{
+  width:         20px;
+  text-align:    center;
+  border:        1px;
+  border-radius: 3px;
+  padding-left:  3px;
+  padding-right: 3px;
+  background-color: #333333;
+  color: #fcfcfc;
+}
+
+.button{
+  font-weight: 	 normal; 
+  text-align:    center;
+  border:        1px;
+  border-radius: 3px;
+  padding-left:  3px;
+  padding-right: 3px;
+  padding-top:	 1px;
+  padding-bottom: 1px;
+  background-color: #5776cb !important;
+  color: #bbbbbb;
+  text-decoration: none;
+  text-transform: uppercase;  
+} 
+
+.button-green{
+  font-weight: 	 normal; 
+  text-align:    center;
+  border:        1px;
+  border-radius: 3px;
+  padding-left:  3px;
+  padding-right: 3px;
+  padding-top:	 1px;
+  padding-bottom: 1px;
+  background-color: #57cb76 !important;
+  color: #222222;
+  text-decoration: none;
+  text-transform: uppercase;  
+} 
+
+.button:hover {
+		color:	#ffffff;
+}
+
+.combo{
+  width:         80px;
+}
+
+.well{
+  margin-left:      10%;
+  width:        	78%;
+  text-align:   	justified;
+  border-radius: 	5px;
+  padding-top: 		2px;
+  padding-bottom: 	2px;
+  padding-left:  	1%;
+  padding-right: 	1%;
+  background-color: #c3c3e3;
+  color: 			#222222;
+}
+
+.paper{
+  margin-left:      10%;
+  width:        	78%;
+  text-align:   	left;
+  border-radius: 	5px;
+  padding-top: 		5px;
+  padding-bottom: 	5px;
+  padding-left:  	1%;
+  padding-right: 	1%;
+  background-color: #ffffff;
+  color: 			#021202;
+}
+
+.space{
+  width:        	100%;
+  padding-top: 		5px;
+}
+
+.justtext{
+  margin-left:      10%;
+  width:        	78%;
+  text-align:   	justified;
+  padding-top: 		1px;
+  padding-bottom: 	1px;
+  padding-left:  	1%;
+  padding-right: 	1%;
+
+}
+
+.code{
+  font-family:		monospace,tahoma,verdana !important;
+  text-align:   	justified;
+  padding-top: 		2px;
+  padding-bottom: 	2px;
+  padding-left:  	1px;
+  padding-right: 	1px;
+
+}
+
+.quote{
+  font-family:		"Brush Script MT Italic","Freestyle Script Regular", serif !important;
+  text-align:   	justified;
+  padding-top: 		3px;
+  padding-bottom: 	1px;
+  padding-left:  	1px;
+  padding-right: 	1px;
+
+}
